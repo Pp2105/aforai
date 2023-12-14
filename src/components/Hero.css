@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+   }
+
+
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(-100%); }
+    to { -webkit-transform: translateX(100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.lifetimeDeal{
+    width: fit-content;
+    display: flex;
+height: 46px;
+align-items: center;
+gap: 6px;
+border-radius: 12px;
+    border: 2px solid #333;
+    background: linear-gradient(270deg, #FFB901 17.08%, #FF9501 100%);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.dealbutton{
+display: flex;
+height: 30px;
+padding: 7px 3px 7px 7px;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 1.636px;
+border-radius: 6px;
+border: 1px solid #333;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.50) 50.04%, rgba(255, 255, 255, 0.50) 50.85%);
+}
+.titleBold{
+    color: #222;
+    text-align: center;
+    font-family: var(--font-manrope);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 62.4px; /* 130% */
+    margin-top: 40px;
+    text-wrap: balance;
+}
+
+.paragraph{
+    margin-top: 40px;
+}
+.paragraph p{
+color: #525252;
+text-align: center;
+font-family: var(--font-manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+text-wrap: balance;
+ margin-left: 20px;
+ 
+}
+
+.qualityTab{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#scroll-text {
+   /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 12s linear infinite;
+  -webkit-animation: my-animation 12s linear infinite;
+  animation: my-animation 12s linear infinite;
+    
+  }
+.fourNotes,.fourNotes1{
+
+    color: #525252;
+font-family: var(--font-manrope);
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 13px; /* 100% */
+    display: flex;
+width: 185px;
+height: 26px;
+padding: 5px 6.467px 5px 7px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+flex-shrink: 0;
+border-radius: 4px;
+border: 1px solid #E6E6E6;
+background: #FAFAFA;
+
+
+
+
+
+}
+.fourNotes1{
+  width: 220px;
+}
+
+.twoButtons{
+display: flex;
+flex-direction: row;
+margin-top: 30px;
+gap: 20px;
+ 
+}
+
+.tryForFreeButton{
+    display: flex;
+height: 38px;
+padding: 11px 24.535px 11px 29px;
+justify-content: center;
+align-items: center;
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.20);
+background: linear-gradient(105deg, #6004FF 0%, #7F35FF 23.95%, #370097 60.11%, #8D4AFF 100%);
+
+/* Typo*/
+color: #FFF;
+text-align: center;
+font-family: var(--font-manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+.GetStartedButton{
+     
+    height: 38px;
+    padding: 11px 24.535px 11px 29px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    background: linear-gradient(105deg, #6004FF 0%, #7F35FF 23.95%, #370097 60.11%, #8D4AFF 100%);
+    display: none;
+    color: #FFF;
+text-align: center;
+font-family: var(--font-manrope);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+
+}
+.viewPricingButton{
+    display: flex;
+    
+    height: 38px;
+    padding: 11px 25.079px 11px 29px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 12px;
+border: 1px solid #E6E6E6;
+background: #F5F5F5;
+
+    color: #525252;
+text-align: center;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+}
+
+
+@media (max-width:912px){
+    .qualityTab{
+        display:none;
+    }
+}
+ @media (max-width:768px){
+    .paragraph p{
+        color: #525252;
+        line-height: 24px; /* 150% */
+        
+         margin-left: 10px;
+         
+        }
+
+        .lifetimeDeal{
+            height: auto;
+            padding: 5px;
+            margin-top: 30px;
+        }
+   .dealbutton{
+    height: auto;
+   }
+   .qualityTab{
+    display: none;
+   }
+  
+ 
+ }
+
+ @media(max-width:550px){
+    .titleBold{
+        
+        color: #222;
+        text-align: left;
+        font-family: var(--font-manrope);
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46px; /* 130% */
+        margin-top: 40px;
+        text-wrap: balance;
+        padding-left: 15px;
+    }
+
+    .paragraph p{
+        padding-left: 15px;
+        text-align: left;
+        text-wrap: balance;
+    }
+    .qualityTab{
+        display: none;
+       }
+        
+       .twoButtons{
+        display: flex;
+        
+        flex-direction: column;
+       }
+       
+       .tryForFreeButton{
+        display: none;
+       }
+       .GetStartedButton{
+        display: flex;
+         width: 500px;
+       }
+     
+ }
+
+ @media (max-width:435px){
+    .GetStartedButton, .viewPricingButton{
+        width: 300px;
+    }
+ }
+
+ @media(max-width:280px){
+    .titleBold{
+        color: #222;
+        text-align: left;
+        font-family: var(--font-manrope);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 46px; /* 130% */
+        margin-top: 40px;
+        text-wrap: balance;
+        padding-left: 15px;
+    }
+
+    .paragraph p{
+        padding-left: 15px;
+        text-align: left;
+    }
+    .qualityTab{
+    display: none;
+   }
+   .twoButtons{
+    display: flex;
+    
+    flex-direction: column;
+   }
+   .GetStartedButton, .viewPricingButton{
+    width: 200px;
+   }
+    
+ }
+
+ 
+  
+ 
